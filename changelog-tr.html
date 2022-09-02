@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<img src="./res/pojav_logo.png"><br>
+<a><b> </b>
+Hakkında
+Değişiklik günlüğü
+Haberler
+Patreon! • Yeni ne var 
+- 21w10a'nın üzerindeki Minecraft Sürümlerini çalıştırmak için Java 17
+- Kontroller Revizyonu: çekmece düğmeleri ve yeni kontrol düzenleme özellikleri gibi yeni özellikler eklendi.
+(Bu revizyondan önce yapılan denetimlerin çalışmayacağını unutmayın.)
+- Yeni oluşturucular: virgl ve vgpu
+(VirGL OpenGL 4.5'e kadar desteklese de gölgelendiricileri düzgün çalıştıramaz.)
+- Kaldırılan zink
+- Doregon / PojavLauncher_iOS ile olanlardan sonra yerel hesaplar uygulandı ve bu nedenle Minecraft kaynaklarını bile indiremezsiniz.
+(Güncellemeden sonra hala Minecraft oynayabilmeniz için PojavLauncher klasörünüzü yedeklediğinizden emin olun)
+
+ preview v2.5.0 önizleme (kullanımdan kaldırıldı) * Lütfen dikkat: OptiFine Yükleyici deneyseldir, çünkü bazı cihazlar açılış ekranında (Mojang Ekranı) çökecektir.
+
+ 
+
+Açılış ekranında OptiFine çökmesiyle ilgili hatayı bildirmeyin, bunlar çözülmez.
+* Yeni ayarlar:
+- Artık dokunma hareketlerinin MS gecikmesini özelleştirebilirsiniz (bloğu yerleştirme, bloğu yok etme.)
+• Yenilik:
+- Ekrana dokunarak ve SN düğmesini basılı tutarak Minecraft 1.8 veya üzeri sürümlerde kaydırma
+
+ önizleme v2.4.2 önizleme * İyi haber: Herhangi bir Android 7.0+ cihaz artık Minecraft'ı normal şekilde çalıştırabilir.
+• Değişimler:
+- OptiFine yükleyici eklendi!
+- Harici fare ve klavye desteği (Özellik Android 8.0'a ihtiyaç duyar.
+
+ 
+
+Sol veya sağ fare olayı algılanamıyor).
+- Launcher UI şimdi doğru büyük ekranlar uygun olmalıdır.
+- Serbest form modu şimdi çalışıyor.
+- Sanal fare artık düzgün çalışıyor.
+- Daha iyi dönüştürücü için multdoj7'yi PojavDX (dx 1.16) ile değiştirdi (önerdiğiniz için artdeell'e teşekkürler).
+• Düzeltiyor:
+- Dokunma olayı tıklama olayı olarak tetiklenir, bu hata Boardwalk'ta bulunur.
+- (Oyun İçi) Etrafa baktıktan sonra fare olayı tetiklendi.
+
+◆ v2.4 BETA sürümü * Unutmayın: Cihazınızın Android sürümü 7.0'ın üzerindeyse veya buna eşitse, VMOS uygulamasını kullanın.
+
+ 
+
+Vmo'lar Android 5.1 işletim sistemini cihazınıza yükleyecektir.
+
+ 
+
+Bu uygulamayı çalıştırmak için alabilir (VMOS Play Store tarafından kaldırılır, manuel olarak yüklemeniz gerekir)
+• Değişimler:
+- OpenJDK ve busybox kaldırıldı.
+- ARM 64bit yerel kütüphaneleri yeniden eklendi.
+
+• Düzeltiyor:
+- Kullanıcıların internet bağlantısı olmadan Minecraft'ı başlatmasını engelleyen bir hata düzeltildi.
+
+ release v2.3.1 BETA sürümü * Değişiklikler:
+- OpenJDK yükleme günlüğüne metin seçimi eklendi.
+• Düzeltiyor:
+- Cihazlar openjdk'yı yükleyemiyor ancak hatayı gizleyebiliyor.
+
+ release v2.3 BETA sürümü * Ne değişti:
+- Güncelleme işlevinde bazı kodlar değiştirildi.
+
+ Changes v2.2 BETA (özel) • Değişiklikler:
+- Busybox eklendi.
+- Dönüştürücü için OpenJDK eklendi (sadece ARM 64bit).
+- Daha fazla AWT işlevi eklendi.
+- Ekran görüntüsü (ve F2 tuşu) şimdi doğrudan API (javax.ımageıo).
+
+ release v2.1 BETA sürümü * Değişiklikler:
+- Changelog düğmesi eklendi!
+- Artık listede görünen özel sürümler (kullanıcı için uygulanmadı)
+- In-app şimdi kullanılabilir Güncelleştirme.
+- Kısmi OpenGL 2.0 ve daha iyi performans için glshim'i GL4ES ile değiştirdi.
+
+ Changes v2.0 BETA • Değişiklikler:
+- [Kısmi] Yeni tasarım (2017 orijinal Minecraft Başlatıcısının kopyası)
+- Nasıl değiştiğini kullanıcıların yükle/Kaydet.
+- Seçmek için daha fazla seçenek için Menü eklendi.
+- PC faresini şekillendirmek için sanal fare eklendi.
+
+• Düzeltiyor:
+- Dönüşüm sırasında maksimum ilerleme -1.
+- Bazı sürümler çalıştırıldığında doğrulama başarısız oldu (istemci dosyasını yamalayarak)
+
+ v1 v1.0.4 (yayınlanmadan önce her şeyi kaybetti) - Sürüm indirme seçeneği eklendi.
+- Sanal fare eklendi (ancak 2.0'dan daha iyi yeniden yazma)
+ Changes v1.0.1-v1.0.3 ALFA • Değişiklikler:
+- 1.2.5, 1.7.2, 1.7.10, 1.8, 1.9 önceden dönüştürülmüş sürümleri eklendi.
+- Sekme, Ekran Görüntüsü, Zorla kapatma düğmeleri eklendi.
+
+◆ v1.0 ALFA • İlk sürüm.
+
+ 
+
+Minecraft Başlatıcısı olarak adlandırın
+* Sadece önceden dönüştürülmüş 1.9 sürümü eklendi.
+
+Bu, bu sürümler için düzeltme ekidir.
+
+ 
+
+Sadece mevcut varlıklar-v0 ile değiştirin ve işiniz bitti!
+Küçük bir not: Yaklaşık 1.17 açılır penceresi göründüğünde, Yine de Oynat öğesine dokunun.
+
+ 
+
+Tamam'a dokunmak yamanın üzerine yazacaktır.
+
+ 
+
+Başka bir küçük not: 1.17.1 veya altı bu düzeltme ekiyle çalışmaz.
+
+Onu işe almak için.
+
+ 
+
+Bu JRE17 dosyasını CPU mimarinize göre indirin. 32bit için arm, 64bit için arm64 ve Chromebook'lar / WSA için x86_64.
+Platformunuz ne olursa olsun, bu kaynak paketini indirmeniz gerekir. Hakkındadeğişiklik günü Haberleri Patreon! • Yeni ne var - 21w10a'nın üzerindeki Minecraft Sürümlerini çalıştırmak için Java 17 - Kontrol Revizyonu: çekmece düğmeleri ve yeni kontrol düzenleme özellikleri gibi yeni özellikler eklendi. (Bu gözden geçirmeden önce yapılan denetimlerin çalışmayacağını unutmayın.- Yeni oluşucular: virgl ve vgpu (VirGL OpenGL 4.5'e kadar desteklenecek de gölleştiricileri düzgün çalıştıramaz.) - Kalan zink - Doregon / PojavLauncher_iOS ile olanlardan sonra hesaplar uygulandı ve bu nedenle Minecraft kaynaklarını safra indiremezsiniz. (Güncellemeden sonra hala Minecraft oynayabilmenizin için PojavLauncher klasörünüzden emin olun) önizleme v2.5.0 önizleme (kullanımdan kaldırıldı) * Lütfen dikkat: OptiFine Yükseltici deneyseldir, çünkü bazı cihazlar açık ekranda (Mojang Ekranı) çökecektir.   Açık ekranında OptiFine çökmesiyle ilgili hatayı bildirmeyin, bunlar çözülmez. * Yeni ayarlar: - Artik dokunma hareketlerinin MS gecikmesini özelleştirebilirsiniz (blok yerleştirme, blok yok etme.) * Yeni: - Ekrana dokun ve SN düğmesini basılı tutarak Minecraft 1.8 veya üzeri sürümlerde kaydetme önleme v2.4.2 önleme * İyi haber: Herhangi bir Android 7.0+ cihaz artı Minecraft'ı normal şekilde çalıştırabilir. * Değerlendirmeler: - OptiFine yükseltici eklendi! - Harita ücreti ve klavye desteği (Özel Android 8.0'a ihtiyaç duyar.   Sol veya sağ fare olayı algılanamıyor). - Başlatıcı kullanıcı arayüzü şimdi doğru büyük ekranlar uygun olmalıdır. - Serbest form modu şimdi çalışıyor. - Sanal ücret artı düzgün çalışıyor. - Daha iyi dönüştürme için multdoj7'yi PojavDX (dx 1.16) ile değiştirdi (önerdiğiniz için artdeell'e teşekkürler). * Düzenliyor: - Dokunma olayı olay olarak tetiklenir, bu hata Boardwalk'ta bulunur. - (Oyun içi) Etraf baktıktan sonra fare olayı tetiklendi. ◆ v2.4 BETA sürümü * Unutmayın: Cihazınızın Android sürümü 7.0'ın üzerindeyse veya buna eşitse, VMOS uygulamasını kullanın.   Vmo'lar Android 5.1 işletim sistemini yükseltecek.   Bu uygulamayı çalıştırmak için kullanılabilir •VMOS Play Store tarafında kalır, manuel olarak yükseltmeniz gerekir) * Değişiklikler: - OpenJDK ve busybox kaldı. - ARM 64bit yerel kütüphaneleri yeni eklendi. * Düzeltiyor: - İnternet bağlantısının kullanılmasından Minecraft'ı başlatmasını engelleyen bir hata düzeltildi. sürüm v2.3.1 BETA sürümü * Değişiklikler: - OpenJDK yükseltme gününe metin seçimi eklendi. * Düzeltiyor: - Cihazlar openjdk'yı yükseltemiyor ancak hatay'ı gizleyebiliyor. sürüm v2.3 BETA sürümü * Ne değiştirildi: - Güncelleme işleminde bazı kodlar değiştirildi. Değişiklikler v2.2 BETA (özel) * Değişiklikler: - Busybox eklendi. - Döndürücü için OpenJDK eki (sadece ARM 64bit). - Daha fazla AWT işlevi eklendi. - Ekran görüntüsü (ve F2 tuşu) şimdi doğrudan API (javax.ımageıo). sürüm v2.1 BETA sürümü * Değişiklikler: - Değişiklik günlüğü eklendi! - Artı listede görülen özel durumlar (kullanım için uygulanmadı) - Uygulama içi şimdi kullanılabilir Güncelleme. - Kısa OpenGL 2.0 ve daha iyi performans için glshim'i GL4ES ile değiştirdi. Değişiklikler v2.0 BETA • Değişiklikler: - [Kısa] Yeni tasarım (2017 orijinal Minecraft Başlangıç kopyasının) - Nasıl kullanıldığını yükselt / Kaydet. - Seçmek için daha fazla seçmek için Menü eklendi. - PC faresini şekillendirmek için sanal ücret eklendi. * Düzeltiyor: - Dönüşüm sıralamasında azami ilerleme -1. - Bazi sürüler çalistirildiginda dogrulama basarisiz oldu (istemci dostunu yamayarak) v1 v1.0.4 (yayinlanmadan önce her seyi kaybetti) - Sürüm indirme seçimi eklendi. - Sanal ücret eki (ancak 2.0'dan daha iyi yeni yazma) Değişiklikler v1.0.1-v1.0.3 ALFA • Değişiklikler: - 1.2.5, 1.7.2, 1.7.10, 1.8, 1.9 önceki dönüşümleri eklendi. - Şeker, Ekran Görüntüsü, Zorla kapatma düğmeleri eklendi. ◆ v1.0 ALFA * İlk sürüm.   Minecraft Başlangıcı olarak adlandırıldı * Sadece önceki dönüşüm 1.9 sürümü eklendi. Bu, bu sürümler için düzeltme ekidir.   Sadece mevcut varlıklar-v0 ile değıştırın ve ışınız bıttı! Küçük bir değil: Yaklaşık 1.17 açılır kalemi görüldüğü yerde, Yine de Oyun öğretine dokunun.   Tamam'a dokunmak yamanın üstüne yazacaktır.   Başka bir küçük not: 1.17.1 veya altı bu düzenleme ekiyle çalışmaz. Onu işe almak için.   Bu JRE17 dosyasını CPU mimarinize göre indirin. 32bit için arm, 64bit için arm64 ve Chromebook'lar / WSA için x86_64. Platformunuz ne olursa olsun, bu kaynak paketini indirmeniz gerekir. Açılış ekranında OptiFine çökmesiyle ilgili hatayı bildirmeyin, bunlar çözülmez.• Yeni ayarlar: - Artık dokunma hareketlerinin MS gecikmesini özelleştirebilirsiniz (bloğu yerleştirme, bloğu yok etme.) * Yeni özellikler: - Ekrana dokunarak ve SN düğmesini basılı tutarak Minecraft 1.8 veya üzeri sürümlerde kaydırma▶ v2.4.2 önizleme * İyi haber: Herhangi bir Android 7.0+ cihaz artık Minecraft'ı normal şekilde çalıştırabilir.* Değişiklikler: - OptiFine yükleyici eklendi!- Harici fare ve klavye desteği (Özellik Android 8.0'a ihtiyaç duyar. Sol veya sağ fare olayı algılanamıyor).- Launcher UI şimdi doğru büyük ekranlar uygun olmalıdır.- Serbest form modu şimdi çalışıyor.- Sanal fare artık düzgün çalışıyor.- Daha iyi dönüştürücü için multdoj7'yi PojavDX (dx 1.16) ile değiştirdi (önerdiğiniz için artdeell'e teşekkürler).* Düzeltmeler: - Dokunma olayı tıklama olayı olarak tetiklendi, bu hata Boardwalk'ta var.- (Oyun İçi) Etrafa baktıktan sonra fare olayı tetiklendi.◆ v2.4 BETA sürümü * Unutmayın: Cihazınızın Android sürümü 7.0'ın üzerindeyse veya buna eşitse, VMOS uygulamasını kullanın. Vmo'lar Android 5.1 işletim sistemini cihazınıza yükleyecektir. Bu uygulamayı çalıştırmak için alabilir (VMOS Play Store tarafından kaldırılır, manuel olarak yüklemeniz gerekir) • Değişiklikler: - OpenJDK ve busybox kaldırıldı.- ARM 64bit yerel kütüphaneleri yeniden eklendi.* Düzeltmeler: - Kullanıcıların internet bağlantısı olmadan Minecraft'ı başlatmasını engelleyen bir hata düzeltildi. release v2.3.1 BETA sürümü * Değişiklikler: - OpenJDK yükleme günlüğüne metin seçimi eklendi.* Düzeltmeler: - Cihazlar openjdk'yı yükleyemiyor ancak hatayı gizleyebiliyor. release v2.3 BETA sürümü * Ne değişti: - Güncelleme işlevinde bazı kodlar değiştirildi. Changes v2.2 BETA (özel) • Değişiklikler: - Busybox eklendi.- Dönüştürücü için OpenJDK eklendi (sadece ARM 64bit).- Daha fazla AWT işlevi eklendi.- Ekran görüntüsü (ve F2 tuşu) şimdi doğrudan API (javax.ımageıo). release v2.1 BETA sürümü * Değişiklikler: - Changelog düğmesi eklendi!- Artık listede görünen özel sürümler (kullanıcı için uygulanmadı) - Uygulama içi Güncelleme artık kullanılabilir.- Kısmi OpenGL 2.0 ve daha iyi performans için glshim'i GL4ES ile değiştirdi. Changes v2.0 BETA • Değişiklikler: - [Kısmi] Yeni tasarım (2017 orijinal Minecraft Başlatıcısının kopyası) - Kullanıcıların yükleme / kaydetme şeklini değiştirdi.- Seçmek için daha fazla seçenek için Menü eklendi.- PC faresini şekillendirmek için sanal fare eklendi.* Düzeltmeler: - Dönüştürürken maksimum ilerleme -1.- Bazı sürümleri çalıştırırken doğrulama başarısız oldu (istemci dosyasını yamalayarak) ◆ v1.0.4 (yayınlanmadan önce her şeyi kaybetti) - Sürüm indirme seçeneği eklendi.- Sanal fare eklendi (ancak 2.0'dan daha iyi yeniden yazma): v1.0.1-v1.0.3 ALFA • Değişiklikler: - 1.2.5, 1.7.2, 1.7.10, 1.8, 1.9 önceden dönüştürülmüş sürümler eklendi.- Sekme, Ekran Görüntüsü, Zorla kapatma düğmeleri eklendi.◆ v1.0 ALFA • İlk sürüm. Minecraft Başlatıcısı olarak adlandırın • Yalnızca önceden dönüştürülmüş 1.9 sürümü eklenir.Bu, bu sürümler için düzeltme ekidir. Sadece mevcut varlıklar-v0 ile değiştirin ve işiniz bitti!Küçük bir not: Yaklaşık 1.17 açılır penceresi göründüğünde, Yine de Oynat öğesine dokunun. Tamam'a dokunmak yamanın üzerine yazacaktır. Başka bir küçük not: 1.17.1 veya altı bu düzeltme ekiyle çalışmaz.Onu işe almak için. Bu JRE17 dosyasını CPU mimarinize göre indirin. 32bit için arm, 64bit için arm64 ve Chromebook'lar / WSA için x86_64.Platformunuz ne olursa olsun, bu kaynak paketini indirmeniz gerekir.Mesaja doğrudan bağlantı (@NotAHero04 / NguynN Hùng # 1258 tarafından)> Lisansları (varsa) da gösterilir.2 Boardwalk: Apache Lisansı 2.0/GNU GPLv2Android Destek Kitaplıkları: Apache Lisansı.MIT Licensevirglrenderer MİT & BSD tarzı Licenselibepoxy Apache 2.0 xHook Lisans 0GL4ES: MİT LicenseOpenJDK: GNU GPLv2LWJGL3: BSD-3 LicenseLWJGLX: Bilinmiyor LicenseMesa 3D Grafik Kütüphanesi: MİT Licensepro sınıf:::: MIT LicenseMCHeadsCrowdinThe Official Minecraft download server/library is provided by Microsoft/ Mojang, and all Minecraft is work of Mojang/Microsoft, bu yüzden lütfen oyunu satın alın, korsan değil. Can't detect left or right mouse event).<br>
+	  - Launcher UI should now fit correctly in big screens.<br>
+	  - Freeform mode is now working.<br>
+	  - Virtual mouse now works properly.<br>
+	  - Replaced multdoj7 with PojavDX (dx 1.16) for better converter (thanks to <a href="https://github.com/artdeell">artdeell</a> for suggesting).<br>
+	  <b>• Fixes:</b><br>
+	  - Touch event triggered as click event, this bug exist from Boardwalk.<br>
+	  - (In-Game) Mouse event triggered after looking around.<br>
+
+	  <br>
+
+	  <h2>▶ v2.4 BETA release</h2>
+	  <b>• Remember: If your device has Android version above or equals to 7.0, use VMOS app. VMOS will install Android 5.1 OS to your device. You can take it to run this app (VMOS is removed by Play Store, you must install it manually)</b>
+	  <br>
+
+	  <b>• Changes:</b><br>
+	  - Removed OpenJDK and busybox.<br>
+	  - Re-added ARM 64bit native libraries.<br>
+	  <br>
+
+	  <b>• Fixes:</b><br>
+	  - Fixed an error that prevent users launch Minecraft without internet connection.<br>
+	  <br>
+
+	  <h2>▶ v2.3.1 BETA release</h2>
+	  <b>• Changes:</b><br>
+	  - Added text selection on OpenJDK install log.<br>
+	  <b>• Fixes:</b><br>
+	  - Devices can't install OpenJDK but able to hide the error.<br>
+	  <br>
+
+	  <h2>▶ v2.3 BETA release</h2>
+	  <b>• What changed:</b><br>
+	  - Changed some code in update function.<br>
+	  <br>
+	  
+	  <h2>▶ v2.2 BETA (private)</h2>
+	  <b>• Changes:</b><br>
+	  - Added busybox.<br>
+	  - Added OpenJDK for converter (ARM 64bit only).<br>
+	  - Added more AWT functions.<br>
+	  - Screenshot (and F2 key) now capture using directly API (javax.imageio).<br>
+	  <br>
+		
+	  <h2>▶ v2.1 BETA release</h2>
+	  <b>• Changes:</b><br>
+	  - Added Changelog button!<br>
+	  - Custom versions now visible in the list (not implemented for user)<br>
+	  - In-app Update now usable.<br>
+	  - Replaced glshim with GL4ES for partial OpenGL 2.0 and better performance.<br>
+	  <br>
+
+	  <h2>▶ v2.0 BETA</h2>
+	  <b>• Changes:</b><br>
+	  - [Partial] New design (copy of 2017 original Minecraft Launcher)<br>
+	  - Changed how users load/save.<br>
+	  - Added Menu for more options to select.<br>
+	  - Added virtual mouse for styling PC mouse.<br>
+
+	  <br>
+	  <b>• Fixes:</b><br>
+	  - Max progress -1 when converting.<br>
+	  - Verification failed when run some versions (by patch the client file)<br>
+	  <br>
+
+	  <h2>▶ v1.0.4 (lost everything before release)</h2>
+	  - Added Download version option.<br>
+	  - Added virtual mouse (but better than 2.0 rewrite)<br>
+
+	  <h2>▶ v1.0.1-v1.0.3 ALPHA</h2>
+	  <b>• Changes:</b><br>
+	  - Added 1.2.5, 1.7.2, 1.7.10, 1.8, 1.9 pre-converted versions.<br>
+	  - Added Tab, Screenshot, Force close buttons.<br>
+	  <br>
+	  
+	  <h2>▶ v1.0 ALPHA</h2>
+	  <b>• Initial release. Name as Minecraft Launcher</b><br>
+	  <b>• Only pre-converted 1.9 version is added.</br>
+</div>
+<div id="News" class="tabcontent">
+  <h2>▶ 1.18: It's Here<a></h2>
+	  <b>Since 21w37a, Mojang bumped the resource pack version to 8, which rendered the current assets-v0 patch unusable. This is the patch for those versions. Simply replace it to the existing assets-v0, and you’re good to go!<br>
+A small note: When the popup about 1.17 appears, tap Play Anyway. Tapping OK will overwrite the patch.
+Another small note: 1.17.1 or below will simply not work with this patch.<br>
+ <br>
+Here's how to get it to work. Download this<a href="https://github.com/PojavLauncherTeam/android-openjdk-build-multiarch/releases/tag/jre17-ec28559"> JRE17 file according to your CPU architecture.</a> arm for 32bit, arm64 for 64bit, and x86_64 for Chromebooks/WSA.<br>
+Regardless of your platform, you'll need to download<a href="https://cdn.discordapp.com/attachments/724163890803638277/892912425366589460/assets-v0.zip"> this resource pack.</a>
+
+<br>
+
+<h1></h1><b> <a href ="https://discord.com/channels/724163890803638273/724163890803638277/892912425538576385">Direct link to message<br> (by @NotAHero04/Nguyễn Hùng#1258) ></a></b><br></h1>
+<br>
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  Support the PojavLauncher development by Subscribing to our Patreon!<br> Get prioritized updates, prioritized support, perks, and access to Google Play Internal Tests!<br>
+  <br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574789">Tier 1 membership level for $2</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574790">Tier 2 membership level for $4</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574791">Tier 3 membership level for $7</a><br>
+  
+  </div>
+
+<!-- Comments Test -->
+<div id="cprt" class="tabcontent">
+  PojavLauncher uses the following components in making the launcher. Their license (if available) are also shown.<br>
+  <br>
+    <a href="https://github.com/zhuowei/Boardwalk">Boardwalk:</a> <a href="https://github.com/zhuowei/Boardwalk/blob/master/LICENSE">Apache License 2.0/GNU GPLv2</a><br>
+      Android Support Libraries:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/master/NOTICE.txt">Apache License 2.0</a><br>
+        <a href="https://github.com/PojavLauncherTeam/gl4es">GL4ES:</a> <a href="https://github.com/ptitSeb/gl4es/blob/master/LICENSE">MIT License</a><br>
+          <a href="https://github.com/PojavLauncherTeam/openjdk-multiarch-jdk8u">OpenJDK:</a> <a href="https://openjdk.java.net/legal/gplv2+ce.html">GNU GPLv2</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjgl3">LWJGL3:</a> <a href="https://github.com/LWJGL/lwjgl3/blob/master/LICENSE.md">BSD-3 License</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjglx">LWJGLX:</a> Unknown License<br>
+            <a href="https://gitlab.freedesktop.org/mesa/mesa">Mesa 3D Graphics Library:</a> <a href="https://docs.mesa3d.org/license.html">MIT License</a><br>
+            <a href="https://github.com/pro-grade/pro-grade">pro-grade:</a> <a href="https://github.com/pro-grade/pro-grade/blob/master/LICENSE.txt">Apache License 2.0</a><br>
+           <a href="https://github.com/iqiyi/xHook">xHook:</a> <a href="https://github.com/iqiyi/xHook/blob/master/LICENSE">MIT & BSD-style License</a><br>
+             <a href="https://github.com/anholt/libepoxy">libepoxy:</a> <a href="https://github.com/anholt/libepoxy/blob/master/COPYING">MIT License</a><br>
+              <a href="https://github.com/PojavLauncherTeam/virglrenderer">virglrenderer:</a> <a href="https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING">MIT License</a><br>
+                <a href="https://mc-heads.net">MCHeads</a><br> 
+                <a href="https://crowdin.com">Crowdin</a><br>
+                <br>
+                  <a>The Official Minecraft download server/library is provided by Microsoft/Mojang, and all Minecraft is work of Mojang/Microsoft, so please buy the game, not pirate it.</a>
+</div>
+<div id="DEFE" class="tabcontent">
+  <a><b>PojavLauncher is a free, open source, and stable Minecraft launcher for Android built from <a href="https://github.com/zhuowei/Boardwalk"> Boardwalk</a>, a MC Launcher project by Zhouwei Zhang</b><br>
+  <b> <br>
+  <table>
+	  <thead>
+		<tr>
+		  <th></th>
+		  <th align="left" colspan="9">Android Development Team</th>
+		</tr>
+		<tr>
+		  <th></th>
+		  <th align="center">Position</th>
+		  <th align="center">Is Active?</th>
+		  <th align="center">Designation</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <td>DuyKhanhTran</td></td>
+		  <td align="center"><b>Developer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Head Development</b></td>
+		</tr>
+		<tr>
+		  <td>artDev</td>
+		  <td align="center"><b>Developer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Head Development</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>SerpentSpirale</td>
+		  <td align="center">Developer, Designer</td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Core Parts of the launcher</b></td>
+		</tr>
+		<tr>
+		  <td>alsakuttle</td>
+		  <td align="center"><b>Designer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Changelog Page</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>¹Voiasis, ²Pedro Souza</td>
+		  <td align="center"><b>Tester</b></td>
+		  <td align="center"><b>¹Yes, ²No</b></td>
+		  <td align="center"><b>Launcher Testers</b></td>
+		</tr>
+		</tr>
+	  </tbody>
+	  		<tr>
+		  <td>¹NekoIceCream, ²RealEthanPlayzDev, ³itsnebulalol ⁴LegacyGamerHD, ⁵Syjalo, ⁶Google61, ⁷crystall1nedev</td>
+		  <td align="center"><b>Contributors</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>¹²³⁴⁵⁶Minor Parts of the Android Repository<br>
+		  <b>⁷Maintaining the iOS version</b></td>
+		</tr>
+	  
+	  
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  rrrff
+</div>
+<!-- End of PojavChangelog v22410u1
+Merged Pull Request #3062
+Report an issue immediately if anything breaks.
+Totally redesigned without knowledge by alsakuttle -->
+
+<script type="text/javascript" src="./res/tabs.js"></script>
+   
+</body>
+</html> 

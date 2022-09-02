@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<img src="./res/pojav_logo.png"><br>
+<a><b> </b>
+<div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'DEFE')">Về PojavLauncher</button>
+  <button class="tablinks" onclick="openCity(event, 'Changelog')">Nhật kí thay đổi</button>
+  <button class="tablinks" onclick="openCity(event, 'News')">Tin tức</button>
+     <button class="tablinks" onclick="openCity(event, 'serpentmoneygenerator')">Ủng hộ</button>
+    <button class="tablinks" onclick="openCity(event, 'cprt')">Nhóm tác giả</button>
+</div>
+<div id="About" class="tabcontent">
+  <a><b>PojavLauncher là một trình khởi chạy Minecraft miễn phí, nguồn mở và ổn định cho Android, được xây dựng dựa trên dự án <a href="https://github.com/zhuowei/Boardwalk"> Boardwalk</a>, một trình khởi chạy Minecraft cho Android bởi Zhouwei Zhang</b><br>
+  <b> <br>
+	  <b>• Nhóm phát triển</b><br>
+	  <
+    <a href="https://github.com/khanhduytran0">Tran Khanh Duy</a>, <a href="https://github.com/artdeell">artdeell</a></br>
+
+	  <a><b>• Nhóm thiết kế: </b><br>
+	  <a href="https://github.com/Mathias-Boulay">SerpentSpirale</a>, <a href="https://github.com/Mathias-Boulay">alsakuttle</a><br>
+	  <b>• Nhóm thử nghiệm: </b>
+	  <a href="https://github.com/voiasis">Voiasis</a>.<br>
+	  <b>• <a href="https://github.com/PojavLauncherTeam/PojavLauncher/issues">Báo cáo lỗi</a></b><br>
+	  <b>• <a href="https://github.com/PojavLauncherTeam/PojavLauncher/actions">Tải về bản phát triển mới nhất.</a></b><br>
+	  <b> <br>
+	  
+	  
+	  <a><b>PojavLauncher cho các thiết bị iOS: <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS">Nhấn vào đây</a> </b>
+</div>
+<div id="Changelog" class="tabcontent">
+  <body background="./res/background.png" text="ffffff" link="ffffff" alink="ffffff" vlink="ffffff" marginwidth="20" marginheight="20"></body>
+  
+  <h2>▶ <a href="https://github.com/PojavLauncherTeam/PojavLauncher/actions?query=branch%3Av3_openjdk">Các bản phát triển v3</a></h2>
+	  <b>• Các tính năng mới:</b><br>
+	  - Một bộ cài mod đầy đủ chức năng<br>
+	  	  <b>——————</br>
+          <b>• Những tính năng mới:</b><br>
+          - Nhanh hơn với Java 8.<br>
+	  - Có thể khởi chạy Minecraft 1.13 trở lên<br>
+	  - Có thể khởi chạy Forge và Fabric! Để cài đặt các trình khởi chạy mod này, chỉ cần tải về các bản cài đặt của chúng (phần mở rộng .jar).<br>
+          - Hỗ trợ nhiều kiến trúc CPU: ARMv7, aarch64, x86 and x86_64.<br>
+          - <strike>Hỗ trợ Tùy chỉnh điều khiển (từ cộng đồng Discord hoặc bởi bạn)</strike><br>
+          	  <b>——————</br>
+          <b>• Có gì mới</b></br>
+          - Java 17 để chạy các phiên bản Minecraft từ 21w19a (1.17)<br>
+          - Các bản cập nhật điều khiển: thêm nhiều tính năng, như ngăn xếp phím,  và các tùy chỉnh điều khiển mới.<br>
+          (Những tùy chỉnh cũ sẽ không hoạt động.)</br>
+          - ~~New renderers: virgl and vgpu~~ (sẽ bị loại bỏ ở bản cập nhật tiếp theo)</br>
+          ~~(VirGL hỗ trợ OpenGL 4.5 nhưng không hỗ trợ chạy các trình đổ bóng.)~~</br>
+          - Loại bỏ zink</br>
+          - Thay thế chế độ ngoại tuyến bởi chế độ nội bộ. Bạn không thể tải tài nguyên của Minecraft trong chế độ này.</br>
+          <strike>~~(Nếu chưa mua Minecraft thì sao lưu thư mục của trình khởi chạy kẻo muộn 🤣)~~</strike></br>
+          
+	  <br>
+
+	  <h2>▶ v2.5.0 (không còn được sử dụng)</h2>
+	  <b>• Chú ý: OptiFine đang được thử nghiệm, một số thiết bị có thể gặp tình trạng văng trò chơi ở màn hình tải. Những báo cáo lỗi OptiFine văng ở màn hình tải trò chơi sẽ không được giải quyết.</b><br>
+	  <b>• Những cài đặt mới:</b><br>
+	  - Bạn có thể tuỳ chỉnh thời gian trễ của cử chỉ chạm (để đặt và phá khối.)<br>
+	  <b>• Những tính năng mới:</b><br>
+	  - Kéo thả chuột ở Minecraft 1.8 trở lên bằng cách nhấn giữ vào màn hình và nhấn nút SEC.<br>
+	  <br>
+
+	  <h2>▶Bản xem trước v2.4.2</h2>
+	  <b>• Tất cả các thiết bị chạy Android 7.0 trở lên có thể chạy Minecraft một cách bình thường.</b><br>
+	  <b>• Những thay đổi:</b><br>
+	  - <font color="green">Thêm trình cài đặt OptiFine!</font><br>
+	  - Hỗ trợ chuột và bàn phím ngoài (Yêu cầu Android 8.0 trở lên. Không thể phát hiện việc nháy chuột trái hoặc phải).<br>
+	  - Giao diện người dùng của trình khởi chạy giờ sẽ vừa vặn với màn hình lớn.<br>
+	  - Chế độ cửa sổ tự do giờ đã hoạt động.<br>
+	  - Chuột ảo giờ đã hoạt động một cách bình thường.<br>
+	  - Đã thay thế multdoj7 với PojavDX (dx 1.16) để chuyển đổi tốt hơn (xin cảm ơn <a href="https://github.com/artdeell">artdeell</a> với lời đề nghị này).<br>
+	  <b>• Sửa lỗi:</b><br>
+	  - Việc chạm vào màn hình kích hoạt nháy chuột, lỗi này có từ Boardwalk.<br>
+	  - (Trong game) Kích hoạt nháy chuột sau khi nhìn xung quanh.<br>
+
+	  <br>
+
+	  <h2>▶ Phiên bản v2.4 BETA</h2>
+	  <b>• Hãy nhớ: Nếu thiết bị của bạn đang chạy Android từ 7.0 trở lên, sử dụng ứng dụng VMOS. VMOS sẽ cài đặt Android 5.1 vào thiết bị của bạn. Bạn có thể sử dụng VMOS để chạy trình khởi chạy này (không có sẵn trên Play Store)</b>
+	  <br>
+
+	  <b>• Những thay đổi:</b><br>
+	  - Loại bỏ OpenJDK và busybox.<br>
+	  - Thêm lại các thư viện ARM 64bit.<br>
+	  <br>
+
+	  <b>• Sửa lỗi:</b><br>
+	  - Sửa lỗi không thể khởi chạy Minecraft khi đang ngoại tuyến.<br>
+	  <br>
+
+	  <h2>▶ v2.3.1 BETA</h2>
+	  <b>• Những thay đổi:</b><br>
+	  - Thêm khả năng chọn văn bản trong nhật kí cài đặt OpenJDK.<br>
+	  <b>• Sửa lỗi:</b><br>
+	  - OpenJDK có thể không cài đặt được nhưng có thể ẩn được báo cáo lỗi.<br>
+	  <br>
+
+	  <h2>▶ v2.3 BETA</h2>
+	  <b>• Các thấy đổi:</b><br>
+	  - Thay đổi một số dòng lệnh của hàm cập nhật.<br>
+	  <br>
+	  
+	  <h2>▶ v2.2 BETA (nội bộ)</h2>
+	  <b>• Các thay đổi:</b><br>
+	  - Thêm busybox.<br>
+	  - Thêm OpenJDK cho trình chuyển đổi (chỉ ARM 64bit).<br>
+	  - Thêm nhiều hàm AWT.<br>
+	  - Chụp ảnh màn hình bởi nút F2 giờ sẽ sử dụng javax.imageio.<br>
+	  <br>
+		
+	  <h2>▶ v2.1 BETA</h2>
+	  <b>• Các thầy đổi:</b><br>
+	  - Thêm menu Nhật kí thay đổi!<br>
+	  - Các phiên bản tùy chỉnh sẽ hiện lên ở danh sách phiên bản (chưa được giới thiệu tới người dùng)<br>
+	  - Có thể cập nhật trong ứng dụng.<br>
+	  - Thấy thế glshim với GL4ES với OpenGL 2.0 và hiệu năng tốt hơn.<br>
+	  <br>
+
+	  <h2>▶ v2.0 BETA</h2>
+	  <b>• Các thay đổi:</b><br>
+	  - [Partial] Thiết kế mới (từ Minecraft Launcher 2017)<br>
+	  - Thay đổi cách người dùng tải/lưu.<br>
+	  - Thêm Menu với nhiều tùy chọn.<br>
+	  - Thêm chuột ảo để giả lập chuột PC.<br>
+
+	  <br>
+	  <b>• Sửa lỗi:</b><br>
+	  - Tiến trình tối đa -1 khi chuyển đổi.<br>
+	  - Xác minh thất bại khi chạy một số phiên bản (bằng cách vá tệp trò chơi máy khách)<br>
+	  <br>
+
+	  <h2>▶ v1.0.4 (đã mất tất cả trước khi ra mắt)</h2>
+	  - Thêm tùy chọn Tải phiên bản.<br>
+	  - Thêm chuột ảo (tốt hơn v2.0)<br>
+
+	  <h2>▶ v1.0.1-v1.0.3 ALPHA</h2>
+	  <b>• Các thay đổi:</b><br>
+	  - Thêm các phiên bản 1.2.5, 1.7.2, 1.7.10, 1.8, 1.9 đã được chuyển đổi.<br>
+	  - Thêm các nút Tab, Chụp ảnh màn hình (Screenshot), và Buộc thoát (Force close).<br>
+	  <br>
+	  
+	  <h2>▶ v1.0 ALPHA</h2>
+	  <b>• Phiên bản đầu tiên. Được đặt tên là Minecraft Launcher.</b><br>
+	  <b>• Chỉ thêm phiên bản 1.9 đã được chuyển đổi.</br>
+</div>
+<div id="News" class="tabcontent">
+  <h2>▶ 1.18: Đã có mặt<a></h2>
+	  <b>Từ phiên bản 21w37a, Mojang nâng số phiên bản gói tài nguyên lên 8, khiến bản vá assets-v0 cũ (phiên bản 7) không thể sử dụng được. Đây là bản vá cho những phiên bản này. Chỉ cần thay thế bản vá assets-v0 đã có với bản này, bạn sẽ có thể khởi chạy các phiên bản 1.18!<br>
+Một chú ý nhỏ: Nếu hộp thoại nói về 1.17 hiện lên, chọn Vẫn Chơi. Việc chọn OK sẽ khiến bản vá bị chèn.
+Một chú ý nhỏ khác: Minecraft 1.17.1 hoặc thấp hơn sẽ không chạy với bản vá mới này.<br>
+ <br>
+Đây là cách để chạy chúng. Tải về<a href="https://github.com/PojavLauncherTeam/android-openjdk-build-multiarch/releases/tag/jre17-ec28559"> JRE17 theo kiến trúc CPU trên thiết bị của bạn:</a> arm for 32bit, arm64 for 64bit, and x86_64 for Chromebooks/WSA.<br>
+Bất kể là kiến trúc nào, bạn sẽ cần<a href="https://cdn.discordapp.com/attachments/724163890803638277/892912425366589460/assets-v0.zip"> gói tài nguyên này.</a>
+
+<br>
+
+<h1></h1><b> <a href ="https://discord.com/channels/724163890803638273/724163890803638277/892912425538576385">Liên kết tới tin nhắn<br> (bởi @NotAHero04/Nguyễn Hùng#1258) ></a></b><br></h1>
+<br>
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  Hỗ trợ việc phát triển PojavLauncher bằng cách đăng kí Patreon!<br> Get prioritized updates, prioritized support, perks, and access to Google Play Internal Tests! Nhận ưu tiên cập nhật và hỗ trợ, cùng với những ưu đãi, và quyền truy cập vào câc bản thử nghiệm nội bộ trên Google Play! <br>
+  <br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574789">Cấp độ 1: 46.000 VND</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574790">Cấp độ 2: 92.000 VND</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574791">Cấp độ 3: 162.000 VND</a><br>
+  
+  </div>
+
+<!-- Comments Test -->
+<div id="cprt" class="tabcontent">
+  PojavLauncher sử dụng những phần mềm thành phần sau. Giấy phép của chúng (nếu có) cũng sẽ được nêu.<br>
+  <br>
+    <a href="https://github.com/zhuowei/Boardwalk">Boardwalk:</a> <a href="https://github.com/zhuowei/Boardwalk/blob/master/LICENSE"> Giấy phép Apache 2.0/GNU GPLv2</a><br>
+      Các thư viện hỗ trợ cho Android:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/master/NOTICE.txt">Giấy phép Apache 2.0</a><br>
+        <a href="https://github.com/PojavLauncherTeam/gl4es">GL4ES:</a> <a href="https://github.com/ptitSeb/gl4es/blob/master/LICENSE">Giấy phép MIT</a><br>
+          <a href="https://github.com/PojavLauncherTeam/openjdk-multiarch-jdk8u">OpenJDK:</a> <a href="https://openjdk.java.net/legal/gplv2+ce.html">GNU GPLv2</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjgl3">LWJGL3:</a> <a href="https://github.com/LWJGL/lwjgl3/blob/master/LICENSE.md">Giấy phép BSD-3</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjglx">LWJGLX:</a> Chưa rõ giấy phép<br>
+            <a href="https://gitlab.freedesktop.org/mesa/mesa">Thư viện đồ hoạ Mesa 3D:</a> <a href="https://docs.mesa3d.org/license.html">Giấy phép MIT</a><br>
+            <a href="https://github.com/pro-grade/pro-grade">pro-grade:</a> <a href="https://github.com/pro-grade/pro-grade/blob/master/LICENSE.txt">Giấy phép Apache 2.0</a><br>
+           <a href="https://github.com/iqiyi/xHook">xHook:</a> <a href="https://github.com/iqiyi/xHook/blob/master/LICENSE">Giấy phép MIT & kiểu BSD</a><br>
+             <a href="https://github.com/anholt/libepoxy">libepoxy:</a> <a href="https://github.com/anholt/libepoxy/blob/master/COPYING">Giấy phép MIT</a><br>
+              <a href="https://github.com/PojavLauncherTeam/virglrenderer">virglrenderer:</a> <a href="https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING">Giấy phép MIT</a><br>
+                <a href="https://mc-heads.net">MCHeads</a><br> 
+                <a href="https://crowdin.com">Crowdin</a><br>
+                <br>
+                  <a>Những thư viện trong trò chơi và việc phát triển Minecraft là của Mojang/Microsoft, vì vậy hãy mua trò chơi thấy vì chơi lậu.</a>
+</div>
+<div id="DEFE" class="tabcontent">
+  <a><b>PojavLauncher là một trình khởi chạy Minecraft miễn phí, nguồn mở và ổn định được xây dựng từ <a href="https://github.com/zhuowei/Boardwalk"> Boardwalk</a>, một trình khởi chạy Minecraft bởi Zhouwei Zhang</b><br>
+  <b> <br>
+  <table>
+	  <thead>
+		<tr>
+		  <th></th>
+		  <th align="left" colspan="9">Nhóm phát triển Android</th>
+		</tr>
+		<tr>
+		  <th></th>
+		  <th align="center">Vị trí</th>
+		  <th align="center">Có hoạt động không?</th>
+		  <th align="center">Chỉ định</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <td>DuyKhanhTran</td></td>
+		  <td align="center"><b>Nhà phát triển</b></td>
+		  <td align="center"><b>Có</b></td>
+		  <td align="center"><b>Nhà phát triển chính</b></td>
+		</tr>
+		<tr>
+		  <td>artDev</td>
+		  <td align="center"><b>Nhà phát triển</b></td>
+		  <td align="center"><b>Có</b></td>
+		  <td align="center"><b>Nhà phát triển chính</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>SerpentSpirale</td>
+		  <td align="center">Nhà phát triển, nhà thiết kế</td>
+		  <td align="center"><b>Có</b></td>
+		  <td align="center"><b>Một số phần lõi của trình khởi chạy</b></td>
+		</tr>
+		<tr>
+		  <td>alsakuttle</td>
+		  <td align="center"><b>Nhà</b></td>
+		  <td align="center"><b>Có</b></td>
+		  <td align="center"><b>Trang Nhật kí thay đổi</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>¹Voiasis, ²Pedro Souza</td>
+		  <td align="center"><b>Người thử nghiệm</b></td>
+		  <td align="center"><b>¹Có, ²Không</b></td>
+		  <td align="center"><b>Thử nghiệm</b></td>
+		</tr>
+		</tr>
+	  </tbody>
+	  		<tr>
+		  <td>¹NekoIceCream, ²RealEthanPlayzDev, ³itsnebulalol ⁴LegacyGamerHD, ⁵Syjalo, ⁶Google61, ⁷crystall1nedev</td>
+		  <td align="center"><b>Người đóng góp</b></td>
+		  <td align="center"><b>Có</b></td>
+		  <td align="center"><b>¹²³⁴⁵⁶Một phần nhỏ của bản Android<br>
+		  <b>⁷Nhà phát triển của bản iOS</b></td>
+		</tr>
+	  
+	  
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  rrrff
+</div>
+<!-- End of PojavChangelog v22410u1
+Merged Pull Request #3062
+Report an issue immediately if anything breaks.
+Totally redesigned without knowledge by alsakuttle -->
+
+<script type="text/javascript" src="./res/tabs.js"></script>
+   
+</body>
+</html> 

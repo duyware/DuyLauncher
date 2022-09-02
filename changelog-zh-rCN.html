@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<img src="./res/pojav_logo.png"><br>
+<a><b> </b>
+<button class="tablinks" onclick="openCity(event, 'DEFE')">关于</button>
+<button class="tablinks" onclick="openCity(event, 'Changelog')">更新日志</button> To install one of these "modloaders", just simply download their .jar files.<br>
+          - Multi-architecture support: ARMv7, aarch64, x86 and x86_64.<br>
+          - <strike>Now properly supports Custom Controls (either made by the Discord community or by you!)</strike><br>
+          	  <b>——————</br>
+          <b>• What's New</b></br>
+          - Java 17 for running Minecraft Versions above 21w10a<br>
+          - Controls Revision: added new features, such as drawer buttons, and new control editing features.<br>
+          (Note that controls made before this revision will not work.)</br>
+          - New renderers: virgl and vgpu</br>
+          (Though VirGL supports up to OpenGL 4.5, it can't run shaders properly.)</br>
+          - Removed zink</br>
+          - Implemented local accounts, after what happened with Doregon/PojavLauncher_iOS, and as such, you can't download Minecraft resources, not even one.</br>
+          <strike>(Make sure to backup your PojavLauncher folder so that you can still play Minecraft after updating)</strike></br>
+          
+	  <br>
+
+	  <h2>▶ v2.5.0 preview (deprecated)</h2>
+	  <b>• NOTICE: OptiFine Installer is experimental, for some devices will crash at splash screen (Mojang Screen). Don't report bug about OptiFine crash at splash screen, these will not be solved.</b><br>
+	  <b>• New settings:</b><br>
+	  - You can now customize the MS delay of touch gestures (placing block, destroying block.)<br>
+	  <b>• New features:</b><br>
+	  - Scrolling in Minecraft 1.8 or above by tapping the screen and holding SEC button<br>
+	  <br>
+
+	  <h2>▶ v2.4.2 preview</h2>
+	  <b>• Good news: Any Android 7.0+ devices can now run Minecraft normally.</b><br>
+	  <b>• Changes:</b><br>
+	  - <font color="green">Added OptiFine installer!</font><br>
+	  - External mouse and keyboard support (Feature needs Android 8.0+. Can't detect left or right mouse event).<br>
+	  - Launcher UI should now fit correctly in big screens.<br>
+	  - Freeform mode is now working.<br>
+	  - Virtual mouse now works properly.<br>
+	  - Replaced multdoj7 with PojavDX (dx 1.16) for better converter (thanks to <a href="https://github.com/artdeell">artdeell</a> for suggesting).<br>
+	  <b>• Fixes:</b><br>
+	  - Touch event triggered as click event, this bug exist from Boardwalk.<br>
+	  - (In-Game) Mouse event triggered after looking around.<br>
+
+	  <br>
+
+	  <h2>▶ v2.4 BETA release</h2>
+	  <b>• Remember: If your device has Android version above or equals to 7.0, use VMOS app. VMOS 将在您的设备上安装 Android 5.1 。 您可以使用它来运行此应用程序（VMO已被Play Store删除，您必须手动安装）</b>	 	 
+	 <br>
+	 <b> •变化：</b><br>
+	 -删除了OpenJDK和busybox<br>
+	 -重新添加了ARM 64位本机库<br>
+	 <br>
+	 <b> •修复：</b><br>
+	 -修复了阻止用户在没有internet连接的情况下启动Minecraft的错误<br>
+	 <br>
+
+	 <h2>▶ v2.3.1 测试版</h2>
+	 <b>• 变化:</b><br>
+	 - 在OpenJDK安装日志中添加了文本选择。<br>
+	 <b>• 修复:</b><br>
+	 -设备无法安装OpenJDK，但可以隐藏错误。<br>
+	 <br>
+
+	 <h2>▶ v2.3测试版</h2>
+	 <b> •发生了什么变化：</b><br>
+	 -在更新函数中更改了一些代码<br>
+	 <br>
+	  
+	 <h2>▶ v2.2测试版（私人版）</h2>
+	 <b> •变化：</b><br>
+	 -添加了busybox<br>
+	 -为转换器添加了OpenJDK（仅限ARM 64位）<br>
+	 -添加了更多AWT功能<br>
+	 -现在使用直接API（javax.imageio）捕获屏幕截图（和F2键）<br>
+	 <br>
+
+	 <h2>▶ v2.1测试版</h2>
+	 <b> •变化：</b><br>
+	 -添加了Changelog按钮<br>
+	 -自定义版本现在在列表中可见（未为用户实现）<br>
+	 -应用内更新现在可用<br>
+	 -为部分OpenGL 2.0和更好的性能，将glshim替换为GL4ES<br>
+	 <br>
+
+	 <h2>▶ v2.0测试版</h2>
+	 <b> •变化：</b><br>
+	 -[Partial]新设计（2017年原始的Minecraft启动器的副本）<br>
+	 -更改了用户加载/保存的方式<br>
+	 -添加了更多选项可供选择的菜单<br>
+	 -添加了用于设置PC鼠标样式的虚拟鼠标<br>
+
+	 <br>
+	 <b> •修复：</b><br>
+	 -最大进度-转换时为1<br>
+	 -运行某些版本时验证失败（通过修补客户端文件）<br>
+	 <br>
+
+	 <h2>▶ v1.0.4（发布前丢失所有内容）</h2>
+	 -添加了下载版本选项<br>
+	 -添加了虚拟鼠标（但优于2.0重写）<br>
+
+	 <h2>▶ v1.0.1-v1.0.3 ALPHA</h2>
+	 <b> •变化：</b><br>
+	 -添加了1.2.5、1.7.2、1.7.10、1.8、1.9预转换版本<br>
+	 -添加了选项卡、屏幕截图、强制关闭按钮<br>
+	 <br>
+
+	 <h2>▶ v1.0 ALPHA</h2>
+	 <b> •首次发布。 Minecraft Launcher</b><br>
+	  <b>• 仅添加了预转换的 1.9 版本。</br>
+</div>
+<div id="News" class="tabcontent">
+  <h2>▶ 1.18: It's Here<a></h2>
+	  <b>自 21w37a 起，Mojang 将资源包版本提升至 8，这导致当前的 assets-v0 补丁无法使用。 这是这些版本的补丁。 只需将其替换为现有的 assets-v0 就可以了！<br>
+一个小提示：当关于 1.17 的弹窗弹出时，继续点击 Play 就行了。 点击 确定 将覆盖补丁
+另一个提示：1.17.1 及以下将无法使用这个补丁。<br>
+ <br>
+如何使它正常工作: Download this<a href="https://github.com/PojavLauncherTeam/android-openjdk-build-multiarch/releases/tag/jre17-ec28559"> JRE17 file according to your CPU architecture.</a> arm for 32bit, arm64 for 64bit, and x86_64 for Chromebooks/WSA.<br>
+Regardless of your platform, you'll need to download<a href="https://cdn.discordapp.com/attachments/724163890803638277/892912425366589460/assets-v0.zip"> this resource pack.</a>
+
+<br>
+
+<h1></h1><b> <a href ="https://discord.com/channels/724163890803638273/724163890803638277/892912425538576385">Direct link to message<br> (by @NotAHero04/Nguyễn Hùng#1258) ></a></b><br></h1>
+<br>
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  Support the PojavLauncher development by Subscribing to our Patreon!<br> Get prioritized updates, prioritized support, perks, and access to Google Play Internal Tests!<br>
+  <br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574789">Tier 1 membership level for $2</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574790">Tier 2 membership level for $4</a><br>
+  <a href="https://www.patreon.com/join/pojavlauncher/checkout?rid=7574791">Tier 3 membership level for $7</a><br>
+  
+  </div>
+
+<!-- Comments Test -->
+<div id="cprt" class="tabcontent">
+  PojavLauncher uses the following components in making the launcher. Their license (if available) are also shown.<br>
+  <br>
+    <a href="https://github.com/zhuowei/Boardwalk">Boardwalk:</a> <a href="https://github.com/zhuowei/Boardwalk/blob/master/LICENSE">Apache License 2.0/GNU GPLv2</a><br>
+      Android Support Libraries:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/android/+/master/NOTICE.txt">Apache 2.0 许可证</a><br>
+        <a href="https://github.com/PojavLauncherTeam/gl4es">GL4ES:</a> <a href="https://github.com/ptitSeb/gl4es/blob/master/LICENSE">MIT 许可证</a><br>
+          <a href="https://github.com/PojavLauncherTeam/openjdk-multiarch-jdk8u">OpenJDK：</a> <a href="https://openjdk.java.net/legal/gplv2+ce.html">GNU GPLv2</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjgl3">LWJGL3:</a> <a href="https://github.com/LWJGL/lwjgl3/blob/master/LICENSE.md">BSD-3 许可证</a><br>
+            <a href="https://github.com/PojavLauncherTeam/lwjglx">LWJGLX：</a> 未知许可证<br>
+            <a href="https://gitlab.freedesktop.org/mesa/mesa">Mesa 3D Graphics Library:</a> <a href="https://docs.mesa3d.org/license.html">MIT License</a><br>
+            <a href="https://github.com/pro-grade/pro-grade">pro-grade:</a> <a href="https://github.com/pro-grade/pro-grade/blob/master/LICENSE.txt">Apache License 2.0</a><br>
+           <a href="https://github.com/iqiyi/xHook">xHook:</a> <a href="https://github.com/iqiyi/xHook/blob/master/LICENSE">MIT & BSD-style License</a><br>
+             <a href="https://github.com/anholt/libepoxy">libepoxy:</a> <a href="https://github.com/anholt/libepoxy/blob/master/COPYING">MIT 许可证</a><br>
+              <a href="https://github.com/PojavLauncherTeam/virglrenderer">virglrenderer:</a> <a href="https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING">MIT 许可证</a><br>
+                <a href="https://mc-heads.net">MCHeads</a><br> 
+                <a href="https://crowdin.com">Crowdin</a><br>
+                <br>
+                  <a>官方Minecraft下载服务器/库由Microsoft/Mojang提供，所有Minecraft服务均由Mojang/Microsoft，因此请购买而不是使用盗版游戏。</a>
+</div>
+<div id="DEFE" class="tabcontent">
+  <a><b>PojavLauncher 是一个免费,开源且稳定的Minecraft Android版启动器,基于 <a href="https://github.com/zhuowei/Boardwalk"> Boardwalk</a>启动器 by Zhouwei Zhang</b><br>
+  <b> <br>
+  <table>
+	  <thead>
+		<tr>
+		  <th></th>
+		  <th align="left" colspan="9">Android版本开发团队</th>
+		</tr>
+		<tr>
+		  <th></th>
+		  <th align="center">Position</th>
+		  <th align="center">Is Active?</th>
+		  <th align="center">Designation</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <td>DuyKhanhTran</td></td>
+		  <td align="center"><b>Developer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Head Development</b></td>
+		</tr>
+		<tr>
+		  <td>artDev</td>
+		  <td align="center"><b>Developer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Head Development</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>SerpentSpirale</td>
+		  <td align="center">Developer, Designer</td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Core Parts of the launcher</b></td>
+		</tr>
+		<tr>
+		  <td>alsakuttle</td>
+		  <td align="center"><b>Designer</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>Changelog Page</b></td>
+		</tr>
+	  </tbody>
+	  <tbody>
+		<tr>
+		  <td>¹Voiasis, ²Pedro Souza</td>
+		  <td align="center"><b>Tester</b></td>
+		  <td align="center"><b>¹Yes, ²No</b></td>
+		  <td align="center"><b>Launcher Testers</b></td>
+		</tr>
+		</tr>
+	  </tbody>
+	  		<tr>
+		  <td>¹NekoIceCream, ²RealEthanPlayzDev, ³itsnebulalol ⁴LegacyGamerHD, ⁵Syjalo, ⁶Google61, ⁷crystall1nedev</td>
+		  <td align="center"><b>Contributors</b></td>
+		  <td align="center"><b>Yes</b></td>
+		  <td align="center"><b>¹²³⁴⁵⁶Minor Parts of the Android Repository<br>
+		  <b>⁷Maintaining the iOS version</b></td>
+		</tr>
+	  
+	  
+</div>
+<div id="serpentmoneygenerator" class="tabcontent">
+  rrrff
+</div>
+<!-- End of PojavChangelog v22410u1
+Merged Pull Request #3062
+Report an issue immediately if anything breaks.
+Totally redesigned without knowledge by alsakuttle -->
+
+<script type="text/javascript" src="./res/tabs.js"></script>
+   
+</body>
+</html> 
