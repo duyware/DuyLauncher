@@ -27,3 +27,6 @@ Expected dumb experiments:</p>
 
 * Changelog Page powered by VuePress
 * Zink returns; no VirGL
+* offline mode?
+* dumb ui revamp
+* fuck up everything i guess
