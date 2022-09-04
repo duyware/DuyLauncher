@@ -3,10 +3,9 @@
 <img src="https://github.com/CriticalRange/PojavLauncher/blob/v3_openjdk/app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="130" height="150" alt="PojavLauncher logo">
 
 [![Android CI](https://github.com/duyism/PLauncher-Experiments/workflows/Android%20CI/badge.svg)](https://github.com/duyism/PLauncher-Experiments/actions)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/PojavLauncherTeam/PojavLauncher)](https://github.com/PojavLauncherTeam/PojavLauncher/actions)
-[![Crowdin](https://badges.crowdin.net/pojavlauncher/localized.svg)](https://crowdin.com/project/pojavlauncher)
-[![Discord](https://img.shields.io/discord/724163890803638273.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/6RpEJda) 
-[![Twitter Follow](https://img.shields.io/twitter/follow/plaunchteam?color=blue&style=flat-square)](https://twitter.com/PLaunchTeam)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/duyism/PLauncher-Experiments)](https://github.com/duyism/PLauncher-Experiments/actions)
+[![Discord](https://img.shields.io/discord/724163890803638273.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/C2fV3YrVAM) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/plaunchteam?color=blue&style=flat-square)](https://twitter.com/twcyvinn)
 ---------
 * From [Boardwalk](https://github.com/zhuowei/Boardwalk)'s ashes here comes PojavLauncher!
 
